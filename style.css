@@ -1,0 +1,81 @@
+
+px/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after, body:after{
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+#board{ 
+  display:flex;
+  flex-wrap:wrap;
+  width:315px;
+  height:315px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#form{
+  margin:10px 0px;
+}
+
+section div {
+  display:flex;
+text-align: center;
+cursor: pointer;
+padding-top:1px;
+color: red;
+justify-content:center;
+  align-items:center;
+  font-size:60px;
+}
+
+button{
+  display:block;
+}
+
+.block{
+  border: 3px solid #000000;
+  width: 100px;
+  height: 100px;
+}
+/*Remove top, sides, bottom */ 
+
+#block_1, #block_0, #block_2 {
+  border-top: none;
+}
+
+#block_0, #block_3, #block_6{
+  border-left: none;
+}
+
+#block_2, #block_5, #block_8{
+  border-right: none;
+}
+
+#block_6,#block_7,#block_8{
+  border-bottom:none;
+}
+
+form,label,input{
+  display:block;
+}
